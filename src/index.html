@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <style>
+    :root {
+      --white: hsl(0, 0%, 100%);
+      --light-gray: hsl(212, 45%, 89%);
+      --grayish-blue: hsl(220, 15%, 55%);
+      --dark-blue: hsl(218, 44%, 22%);
+      --card-content-width: 280px;
+    }
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+    }
+    
+    main {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--light-gray);
+    }
+
+    .card {
+      padding: 16px;
+      border-radius: 20px;
+      background-color: var(--white);
+      box-shadow: 1px 12px 31px -5px rgba(0,0,0,0.16);
+      -webkit-box-shadow: 1px 12px 31px -5px rgba(0,0,0,0.16);
+      -moz-box-shadow: 1px 12px 31px -5px rgba(0,0,0,0.16);
+    }
+
+    .card__image {
+      width: var(--card-content-width);
+      aspect-ratio: 1/1;
+      background: url("images/image-qr-code.png") no-repeat center/contain;
+      border-radius: 12px;
+    }
+
+    .card__content {
+      max-width: var(--card-content-width);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding: 24px 0;
+      text-align: center;
+    }
+
+    .card__heading {
+      font-size: 22px;
+      text-align: center;
+      font-weight: bold;
+      color: var(--dark-blue);
+    }
+
+    .card__description {
+      color: var(--grayish-blue);
+    }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="card">
+      <div class="card__image"></div>
+      <div class="card__content">
+        <p class="card__heading">Improve your front-end skills by building projects</p>
+        <p class="card__description">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+      </div>
+    </div>
+  </main>
+  
+
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Christopher Leonardo Alves Ristau</a>.
+  </div>
+</body>
+</html>
